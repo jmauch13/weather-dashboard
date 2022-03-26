@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Dashboard</title>
 </head>
+<header>
+    <h1>Weather Dashboard</h1>
+</header>
 <body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card search-section">
+                <div class="card-body">
+                    <label>Seach for a City:</label>
+                    <div class="input-group mb-3">
+                        <input id="SelectCity" type="text" class="form-control" placeholder="Columbus">
+                        <div class="input-group-append">
+                            <button id="cityWeather" class="btn btn-primary" type="submit">
+                                <i id="getWeather" class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                <div id="past-searches"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="cityName">City</h5>
+                    <ul>
+                        <li><img id="currentWeather" alt="weather"></img></li>
+                        <li class="card-text" id="currentTemp">Temperature:</li>
+                        <li class="card-text" id="currentHumidity">Humidity:</li>
+                        <li class="card-text" id="currentWind">Windspeed</li>
+                        <li class="card-text" id="currentUV">UV Index</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     
+    <div class="row" id="fiveDayForcast"></div>
+</div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./assets/script.js"></script> 
 </body>
 </html>
