@@ -1,62 +1,43 @@
-header h1 {
+.banner {
+    height: 100px;
+    background-color: blue;
     text-align: center;
-    margin-top: 25px;
-    padding: 25px;
-    background-color: rgb(15, 15, 85);
-    color: white;
-    font-size: 1.7em;
-}
-
-.container {
     margin-top: 5px;
 }
 
-.search-section {
-    height: 100%;
-}
 
-.cityList {
-    border: solid;
-    border-width: thin;
-    border-radius: 5px;
-    margin: 5px;
-    padding-left: 2px;
-    background-color: lightgray;
-}
-
-.cityList:hover {
-    background-color: #0275d8;
-    color: #fff;
-}
-
-#fiveDayForcast {
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    font-size: 10pt;
-    padding: 5px 0px;
-}
-
-.col {
-    padding: 2px;
-}
-
-.card {
-    width: 100%;
-    background-color: #ececec;
-}
-
-.forcast-card {
+h1 {
     color: white;
-    background-color: #0275d8;
-    border-radius: 5px;
-    font-size: 8pt;
+    padding-top: 20px;
 }
 
+
+.btn-outline {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: left;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  #bootstrap-overrides.forecastCard {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    height: 215px;
+    word-wrap: break-word;
+    background-color: blue;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  .card-deck {
+    display: flexbox;
+    flex-direction: column;
+    height: 250px;
+    width: 150px;
+  }
+
+  
