@@ -35,7 +35,7 @@ $("#citySearchBtn").click(function() {
 });
 
 // Search on pressing enter
-$('#citySearch').keypress(function (event) {           
+$("#citySearch").keypress(function (event) {           
     if (event.which == 13) {
         event.preventDefault();
         $(this).blur();
@@ -65,7 +65,7 @@ function displayWeather() {
             var weatherURL = "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
 
             $("#cityName").text(response.name);
-            $("#currentWeatherIcon").attr("src", weatherURL);
+            $("#currentWeather").attr("src", weatherURL);
             $("#currentTemp").text(Math.round(response.main.temp) + " °F");
             $("#currentHumidity").text(response.main.humidity + "%");
             $("#currentWindSpeed").text(response.wind.speed + " MPH");
@@ -107,7 +107,7 @@ function displayWeather() {
         })
         .catch(function(error) {
             if (error.status === 404) {
-                $("#cityErrorModal").modal();
+                $("#cityError").modal();
                 $("#citySearch").val("");
             };
         });
@@ -168,9 +168,9 @@ function populateList() {
     var cities = JSON.parse(localStorage.getItem("cities")) || [];
     var cities = cities.reverse();
 
-    $("#citySearchHistory").empty();
+    $("#searchHistory").empty();
     cities.forEach(function(city) {
-        $("#citySearchHistory").append(`<button type="button" class="btn btn-outline searchHistoryBtn">${city}</button>`)
+        $("#searchHistory").append(`<button type="button" class="btn btn-outline searchHistoryBtn">${city}</button>`)
     })
 };
 

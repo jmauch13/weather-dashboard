@@ -23,7 +23,7 @@
       </div>
     </header>
 
-    <div class="container col-8">
+    <div class="container col-11">
       <div class="row">
         <form class="col-3 bg-light py-3" id="searchForm">
           <label for="citySearch"><h5>Search for a City</h5></label>
@@ -36,9 +36,9 @@
           </div>
         </div>
 
-    <label for="citySearchHistory"><h5>Recently Searched</h5></label>
+    <label for="searchHistory"><h5>Recently Searched</h5></label>
       <div class="card">
-        <ul class="list-group list-group-flush" id="citySearchHistory">
+        <ul class="list-group list-group-flush" id="searchHistory">
           <button
             type="button"
             class="btn btn-outline searchHistoryBtn">
@@ -47,7 +47,7 @@
       </div>
     </form>
 
-    <div class="modal fade" id="cityErrorModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="cityError" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -75,7 +75,7 @@
             <span id="cityName">Enter a City</span>
               <span id="currentDate"></span>
                 <img
-                  id="currentWeatherIcon"
+                  id="currentWeather"
                   src="http://openweathermap.org/img/wn/02d@2x.png"/>
                 </h3>
               <br />
@@ -92,7 +92,7 @@
 
     <div class="card-deck m-2">
       <div class="bg-primary card col m-2 text-white"
-        id="bootstrap-overrides">
+        id="bootstrap">
           <div class="my-3">
             <h5 class="mb-3" id="currentDatePlus1">04/01/2022</h5>
               <p class="card-text">
