@@ -12,4 +12,4 @@ Project was created with:
 ## Website link
 https://jmauch13.github.io/weather-dashboard/
 ## Website image
-
+![screenshot](https://user-images.githubusercontent.com/96963955/161450311-c68d1664-9b66-42b3-addf-b16261ca8ddd.png)
